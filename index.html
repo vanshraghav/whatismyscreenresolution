@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="J70zxJYT22_YpVBPrddZKe9bws3-70OqFP5ALWFTyDU" />
+
+    <meta name="description" content="What is my screen resolution - Online tool to check / find screen resolution of your Monitor, Mobile, iPhone, iPad, Android Device in pixels">
+    <meta name="keywords" content="what is my screen resolution, find screen resolution, ios screen resolution, android screen resolution, monitor screen resolution, whatismyscreenresolution.com, check screen resolution, test screen resolution">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <head>
+        <title>What is My Screen Resolution - Check Monitor, Mobile, iPhone, iPad, Android</title>
+        <meta name="description" content="Find screen resolution of your Monitor, Mobile, iPhone, iPad, Android Device in pixels. Test the resolution now." />
+    </head>
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        main {
+            padding: 20px 0;
+        }
+
+        h1, h2, h3, h4, p {
+            text-align: center;
+        }
+
+        .container {
+            background-color: #fff;
+            box-shadow: 0 0 8px #888888;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Additional custom styles here */
+    </style>
+
+    <title>Screen Resolution Checker</title>
+</head>
+
+<body>
+    <header>
+        <h1>What is My Screen Resolution</h1>
+        <h2>Online tool to find your screen resolution</h2>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Your Screen Resolution is</h3>
+                <div class="text-center">
+                    <b><h1 id="resolution"></h1></b>
+                    <h4 id="h4-width"></h4>
+                    <h4 id="h4-height"></h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Advertisements or additional content here -->
+            </div>
+            
+            <div class="col-md-6">
+                <!-- Advertisements or additional content here -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>About Screen Resolution</h2>
+                <p>An online tool to check the screen resolution of any display device. Test the resolution of your monitor, iPad, tablet, iPhone, MacBook, or any other display device. Screen resolution is the number of pixels in the x and y dimensions. It is generally measured as width x height in pixels.</p>
+                <p>Your current screen resolution may be less than the maximum supported screen resolution. You can change your screen resolution from your device settings.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2023 WhatIsMyScreenResolution.NET. <a href="mailto:vssmartniceman97@gmail.com?Subject=" target="_top">Contact</a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript to get screen resolution -->
+    <script>
+        function getScreenResolution() {
+            var width = screen.width;
+            var height = screen.height;
+            var resolution = width + "x" + height;
+            return resolution;
+        }
+
+        function getWidth() {
+            return "Screen Width: " + screen.width + " pixels";
+        }
+
+        function getHeight() {
+            return "Screen Height: " + screen.height + " pixels";
+        }
+
+        document.getElementById("resolution").innerHTML = getScreenResolution();
+        document.getElementById("h4-width").innerHTML = getWidth();
+        document.getElementById("h4-height").innerHTML = getHeight();
+    </script>
+</body>
+</html>
